@@ -1,9 +1,8 @@
-package com.example.springbootdemo.pjo;
+package com.example.springbootdemo.domin;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
 
 @Data
 @AllArgsConstructor

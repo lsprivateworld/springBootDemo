@@ -1,4 +1,4 @@
-package com.example.springbootdemo.controller;
+package com.example.springbootdemo.controller.test;
 
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

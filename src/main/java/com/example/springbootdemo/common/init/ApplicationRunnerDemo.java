@@ -1,15 +1,11 @@
 package com.example.springbootdemo.common.init;
 
-import com.example.springbootdemo.pjo.Person;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 @Component
 @Order(value = 1)

@@ -1,4 +1,4 @@
-package com.example.springbootdemo.controller;
+package com.example.springbootdemo.controller.test;
 
 import com.example.springbootdemo.config.RedissonConfig;
 import org.redisson.RedissonRedLock;

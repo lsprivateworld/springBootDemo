@@ -2,6 +2,10 @@ server:
   port: 8081
   servlet:
     context-path: /spring-boot-demo
+##mybatis
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+
 spring:
   application:
     name: springBootDemo-server
@@ -24,7 +28,21 @@ spring:
         # 针对配置项同名的情况，是否允许nacos的配置覆盖本地的配置
         remote-first: true
 
-
+  datasource:
+    url: ${mysql.url}
+    username: ${mysql.username}
+    password: ${mysql.password}
+    driverClassName: com.mysql.cj.jdbc.Driver
+    maxActive: 300
+    initialSize: 20
+    maxWait: 6000
+    minIdle: 20
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
   redis:
     password: ls140078
     host: 127.0.0.1

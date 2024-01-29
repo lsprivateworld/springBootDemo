@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.springbootdemo.mapper.ArticleMapper">
+    <select id="findArticleById" resultType="com.example.springbootdemo.domin.Article" parameterType="java.lang.Integer">
+        SELECT * FROM article where id=#{id}
+    </select>
+</mapper>
