@@ -24,20 +24,18 @@ public class RedissonConfig {
     public  RedissonClient redissonClient() {
         Config config = new Config();
         //单节点
-        System.out.println(host);
-        config.useSingleServer().setAddress("redis://127.0.0.1:6379");
+        config.useSingleServer().setAddress("redis://" + host + ":" + port);
         //多节点
         /*config.useMasterSlaveServers()
                 .setMasterAddress()
                 .addSlaveAddress()
                 .addSlaveAddress();
          */
-        config.useSingleServer().setPassword("ls140078");
-//        if (StringUtils.isEmpty(password)) {
-//            config.useSingleServer().setPassword(null);
-//        } else {
-//            config.useSingleServer().setPassword("ls140078");
-//        }
+        if (StringUtils.isEmpty(password)) {
+            config.useSingleServer().setPassword(null);
+        } else {
+            config.useSingleServer().setPassword(password);
+        }
 
         return Redisson.create(config);
     }

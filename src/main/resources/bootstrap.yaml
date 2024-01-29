@@ -1,0 +1,31 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /spring-boot-demo
+spring:
+  application:
+    name: springBootDemo-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        # nacos服务器地址
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        # 配置所属命名空间的id,此处我们配置名称为dev的id，可以在命名空间列表查看id的值
+        namespace: 17e5d088-5759-4a68-bb43-523792d808fc
+        # 配置所属分组
+        group: DEFAULT_GROUP
+        # 配置文件类型,对应nacos配置页面的配置格式，默认是properties
+        type: yml
+        # 开启自动刷新nacos配置
+        auto-refresh: true
+        # 针对配置项同名的情况，是否允许nacos的配置覆盖本地的配置
+        remote-first: true
+
+
+  redis:
+    password: ls140078
+    host: 127.0.0.1
+    port: 6379
