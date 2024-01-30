@@ -12,9 +12,8 @@ import org.slf4j.LoggerFactory;
 public class MyLogger {
     private static final Logger logger = LoggerFactory.getLogger("myLog");
 
-    public static void logMessage() {
+    public static void logMessage(String msg) {
         // 使用logger对象记录日志消息
-        logger.info("这是一条自定义的日志信息,这里可以单独做日志的自定义（格式、逻辑等的处理）");
-        logger.debug("fdf");
+        logger.info(msg);
     }
 }

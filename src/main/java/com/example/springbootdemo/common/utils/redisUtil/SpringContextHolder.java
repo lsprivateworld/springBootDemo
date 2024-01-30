@@ -1,4 +1,4 @@
-package com.example.springbootdemo.utils.redisUtil;
+package com.example.springbootdemo.common.utils.redisUtil;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

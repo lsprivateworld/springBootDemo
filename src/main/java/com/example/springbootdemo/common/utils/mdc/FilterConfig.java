@@ -1,4 +1,4 @@
-package com.example.springbootdemo.utils.mdc;
+package com.example.springbootdemo.common.utils.mdc;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

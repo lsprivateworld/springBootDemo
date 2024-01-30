@@ -1,6 +1,7 @@
 package com.example.springbootdemo.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.example.springbootdemo.common.annotation.LogAnnotation;
 import com.example.springbootdemo.common.logger.MyLogger;
 import com.example.springbootdemo.domin.Article;
 import com.example.springbootdemo.service.ArticleService;
@@ -17,8 +18,8 @@ public class ArticleController {
     private ArticleService articleService;
 
     @RequestMapping("/getArticle")
-    public String getFlowList(){
-        MyLogger.logMessage();
+    @LogAnnotation
+    public String getArticle(){
         ModelAndView modelAndView = new ModelAndView("articleList");
         Integer id = 1;
         Article article = articleService.findArticleById(id);

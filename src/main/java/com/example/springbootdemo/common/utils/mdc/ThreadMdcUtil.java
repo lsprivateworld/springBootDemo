@@ -1,9 +1,12 @@
-package com.example.springbootdemo.utils.mdc;
-
+package com.example.springbootdemo.common.utils.mdc;
 
 import java.util.Map;
 import java.util.concurrent.Callable;
 
+/**
+ * 新开线程或线程池中线程的MDC上下文无法获取到主线程中的traceId，需要重写，
+ * 再创建新线程或者线程池启动新线程之前，复制主线程的 traceId，并创建新线程的spanId
+ */
 public class ThreadMdcUtil {
 
     public static void setTraceId(String traceId) {

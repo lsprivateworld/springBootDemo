@@ -1,4 +1,4 @@
-package com.example.springbootdemo.utils.mdc;
+package com.example.springbootdemo.common.utils.mdc;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;

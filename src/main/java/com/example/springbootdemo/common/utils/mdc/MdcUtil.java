@@ -1,4 +1,4 @@
-package com.example.springbootdemo.utils.mdc;
+package com.example.springbootdemo.common.utils.mdc;
 
 import org.slf4j.MDC;
 import java.util.Map;

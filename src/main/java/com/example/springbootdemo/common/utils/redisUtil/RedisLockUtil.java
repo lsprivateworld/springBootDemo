@@ -1,7 +1,7 @@
-package com.example.springbootdemo.utils.redisUtil;
+package com.example.springbootdemo.common.utils.redisUtil;
 
 import com.example.springbootdemo.service.DistributedLocker;
-import com.example.springbootdemo.utils.SpringUtil;
+import com.example.springbootdemo.common.utils.SpringUtil;
 import org.redisson.api.RCountDownLatch;
 import org.redisson.api.RLock;
 import org.redisson.api.RSemaphore;
