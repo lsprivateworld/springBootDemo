@@ -12,4 +12,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface ArticleMapper {
     Article findArticleById(Integer id);
     int updateArticle(Article article);
+    void insertArticle(Article article);
 }

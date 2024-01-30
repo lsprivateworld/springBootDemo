@@ -26,4 +26,12 @@ public class ArticleController {
         return JSON.toJSONString(article);
     }
 
+    @RequestMapping("/insertArticle")
+    @LogAnnotation
+    public String insertArticle(){
+        Article article = Article.builder().title("第一篇文章").content("试试看咯").build();
+        articleService.insertArticle(article);
+        return JSON.toJSONString(article);
+    }
+
 }

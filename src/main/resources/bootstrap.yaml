@@ -6,7 +6,7 @@ logging:
   file:
     path: /Users/ls/Desktop/logs/springbootDemo
   config: classpath:logback-spring.xml
-##mybatis
+#mybatis
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
 

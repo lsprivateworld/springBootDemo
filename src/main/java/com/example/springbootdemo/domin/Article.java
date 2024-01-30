@@ -1,5 +1,7 @@
 package com.example.springbootdemo.domin;
 
+import lombok.Builder;
+
 import java.util.List;
 
 /**
@@ -7,6 +9,7 @@ import java.util.List;
  * 作者：刘帅
  * 日期：2023年12月06日
  */
+@Builder
 public class Article {
     private Integer id;
     private String title;

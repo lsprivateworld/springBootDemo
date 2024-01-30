@@ -4,4 +4,17 @@
     <select id="findArticleById" resultType="com.example.springbootdemo.domin.Article" parameterType="java.lang.Integer">
         SELECT * FROM article where id=#{id}
     </select>
+
+    <insert id="insertArticle" parameterType="com.example.springbootdemo.domin.Article" useGeneratedKeys = "true" keyProperty="id">
+        insert into article(`title`,`content`)values(#{title},#{content})
+    </insert>
+
+    <insert id="updateArticle" parameterType="com.example.springbootdemo.domin.Article" useGeneratedKeys = "true" keyProperty="id">
+        update article set title = #{tille} where
+        <set>
+            <if test="title!=null">title  =#{title}</if>
+            <if test="content!=''">content =#{content}</if>
+        </set>
+        where id = #{id}
+    </insert>
 </mapper>

@@ -8,8 +8,6 @@ import org.springframework.context.ApplicationContextAware;
 
 import org.springframework.stereotype.Component;
 
-
-
 /**
  * 普通类调用Spring bean对象：
  * 说明：
